@@ -1,3 +1,10 @@
+/*
+*	Clase que gestiona el cambio del mapa de acciones del InputSystem.
+*	Se utiliza la clase EventBus para invocar el cambio mediante eventos,
+*	por lo que se puede llamar desde cualquier parte del proyecto.
+*	Requiere declarar en el EventBus el evento OnCambiarActionMap<string> y una 
+*	función para invocar el evento (CambiarActionMap(string newMap))
+*/
 public class ActionMapMannager : MonoBehaviour
 {
 	public PlayerInput _playerInput;
