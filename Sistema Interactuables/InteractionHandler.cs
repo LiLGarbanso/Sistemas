@@ -1,3 +1,12 @@
+/*
+ *	Clase que implementa el sistema para interactuar con objetos interactuables.
+ *	El objeto que contenga el script debe tener un collider como trigger para detectar
+ *	los objetos interactuables. Los objetos interactuables deben implementar la interfaz IInteractable
+ *	y deben estar en la layerMask definida para poder detectarse. El comportamiento de cada interactuable
+ *	se define en la propia implementación de la interfaz. Idealmente este script irá en el GameObject del
+ *	personaje jugable si lo hay.
+ */
+
 public class InteractionHandler : MonoBehaviour
 {
     [SerializeField] private LayerMask interactableLayer;
