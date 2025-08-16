@@ -1,3 +1,6 @@
+using System;
+using UnityEngine;
+using UnityEngine.InputSystem;
 /*
 *	Clase que gestiona el cambio del mapa de acciones del InputSystem.
 *	Se utiliza la clase EventBus para invocar el cambio mediante eventos,
@@ -42,3 +45,4 @@ public class ActionMapMannager : MonoBehaviour
 		currentMap = newMap;	
 	}
 }
+
