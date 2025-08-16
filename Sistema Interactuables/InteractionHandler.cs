@@ -1,3 +1,6 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
 /*
  *	Clase que implementa el sistema para interactuar con objetos interactuables.
  *	El objeto que contenga el script debe tener un collider como trigger para detectar
@@ -40,3 +43,4 @@ public class InteractionHandler : MonoBehaviour
 			currentInteractable?.Interact(gameObject);
     }
 }
+
