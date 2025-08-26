@@ -1,6 +1,8 @@
 using UnityEngine;
 /*
  * Interfaz que define un elemento con el que se puede interactuar
+ * Cuando se define esta interfaz, el objeto debe heredar también la clase Monobehaviour,
+ * si no, no podrá ser arrastrada a la escena. EJ: "public class ShipPart : Monobehaviour, IInteractable"
  */
 public interface IInteractable
 {
@@ -9,3 +11,4 @@ public interface IInteractable
     int Priority { get; } // Cuanto mayor, más importante
 
 }
+
